@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //1,
+        var  input = [1,2,3,2,3];
+			let empty= [];
+			for(i=0; i < input.length; i++){ 
+				if(empty.indexOf(input[i]) == -1) { 
+					empty.push(input[i]); 
+				} 
+			}
+		 console.log(empty);
+            //2,
+            let con=[11,12,21,22,23,33,34,40,44,120];
+            let con2=[];
+            for(i=0;i<con.length;i++){
+                if((con[i]%3 == 0)&&(con[i]%4 == 0)&&(con[i]%5 == 0)){
+                   con2.push(con[i])
+                }
+               }
+            console.log(con2);
+            //3,
+            let con1=[11,12,21,22,23,33,34,40,44,120]
+			 var sum=0; 
+			 var emp=0;
+			for (var i = 0; i < con .length; i++) {
+            if (con1[i]%2 == 0 ) {
+				sum+=con1[i];
+                emp++				
+           }
+          }
+		  console.log(sum);
+		  console.log(sum/emp);
+    </script>
+</body>
+</html>
